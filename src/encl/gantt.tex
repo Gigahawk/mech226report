@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage{rotating}
+\usepackage{pgfgantt}
+\usepackage{pgfcalendar}
+\usepackage{datetime}
+\usepackage[none]{hyphenat}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{sidewaysfigure}
+	\centering
+	\noindent\resizebox{\textwidth}{!}{
+		\begin{ganttchart}[
+		x unit=0.35cm,
+		y unit chart=0.6in,
+		hgrid,vgrid={dotted},
+		time slot format=isodate,
+		bar label node/.style={text width=0.7in, align=right,anchor=east},
+		group label node/.style={text width=0.7in, align=right,font=\bf,anchor=east},
+        ]
+        {2017-09-20}{2017-12-7}
+			\gantttitlecalendar{month=name, day} \\
+
+			\ganttgroup{Total Duration}{2017-09-20}{2017-12-7} \\
+			\ganttgroup{Proposal}{2017-09-20}{2017-11-6} \\
+			\ganttbar{Organize meetings and roles}
+			{2017-09-20}{2017-09-25} \\
+			\ganttbar{Decide on topic and sections}
+			{2017-09-25}{2017-10-2} \\
+			\ganttbar{Research sources}
+			{2017-10-2}{2017-10-19} \\
+			\ganttbar{Write proposal draft}
+			{2017-10-17}{2017-10-31} \\
+			\ganttbar{Compile annotated bibliography}
+			{2017-10-17}{2017-11-6} \\
+			\ganttbar{Finalize proposal}
+			{2017-10-31}{2017-11-6} \\
+			\ganttgroup{Report}{2017-10-31}{2017-12-7} \\
+			\ganttbar{Write report draft}
+			{2017-10-31}{2017-11-21} \\
+			\ganttbar{Organize presentation}
+			{2017-11-6}{2017-11-28} \\
+			\ganttbar{Review report}
+			{2017-11-21}{2017-11-30} \\
+			\ganttbar{Finalize report}
+			{2017-12-1}{2017-12-7}  
+		\end{ganttchart}
+	}
+\end{sidewaysfigure}
+
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass[letterpaper,11pt]{reportOutline}
+
+\newcounter{proposedFigure}
+\newcounter{proposedTable}
+\newcommand{\addproposedfigure}[1]{
+	\stepcounter{proposedFigure}
+	\addtocontents{lof}{Figure \arabic{proposedFigure}: #1\par}
+}
+\newcommand{\addproposedtable}[1]{
+	\stepcounter{proposedTable}
+	\addtocontents{lot}{Table \arabic{proposedTable}: #1\par}
+}
+
+
+\begin{document}
+	\addproposedtable{The recommendations of the NSTC}
+
+	\addproposedfigure{The social dilemma of autonomous vehicles}
+	\addproposedfigure{The constituents and potential effects of AI biases}
+	\addproposedfigure{A visual representation of a simple neural network}
+	
+	\listoftables
+	\listoffigures
+	
+\end{document}
