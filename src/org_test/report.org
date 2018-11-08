@@ -1,0 +1,423 @@
+#+TITLE: Ethics of Artificial Intelligence in the North-American Workplace
+
+#+latex_header: \usepackage[toc,acronyms]{glossaries}
+#+latex_header: \usepackage[round]{natbib}
+#+latex_header: \usepackage{svg}
+#+latex_header: \usepackage{array}
+#+latex_header: \makeglossaries
+
+#+latex_header: \newcommand\blfootnote[1]{\begingroup\renewcommand\thefootnote{}\footnote{#1}\addtocounter{footnote}{-1}\endgroup}
+
+
+#+latex_header_extra: \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+#+latex_header_extra: \newacronym{ai}{AI}{Artificial Intelligence}
+#+latex_header_extra: \newacronym{aida}{AIDA}{Artificial Intelligence Development Act}
+#+latex_header_extra: \newacronym{ubc}{UBC}{University of British Columbia}
+#+latex_header_extra: \newacronym{nn}{NN}{neural network}
+#+latex_header_extra: \newacronym{sa}{SA}{sentiment analysis}
+#+latex_header_extra: \newacronym{nstc}{NSTC}{National Science and Technology Council}
+#+latex_header_extra: \newacronym{rd}{R\&D}{research and development}
+#+latex_header_extra: \newacronym{mlai}{MLAI}{machine learning and artificial intelligence}
+
+#+TOC: tables
+#+TOC: listings
+
+\glsaddall \printglossary[type=\acronymtype]
+
+
+#+begin_abstract
+[[ac:ai][AI]] is becoming increasingly prominent in the workplace, with systems appearing everywhere from smartphones to cars. 
+With this increase of [[ac:ai][AI]] systems, more ethical issues regarding their usage are becoming apparent. 
+[[ac:ai][AI]] systems are are incredibly complicated and often considered “black boxes” due to the lack of understanding and trust society has with regards to their inner workings. 
+The use of neural networks and data testing using known inputs and outputs, pose the challenge of verifying whether [[ac:ai][AI]] is suitable for a task. 
+Using AI in daily life demands significant  human computer interaction, which means that any biases inherent to [[ac:ai][AI]] will propagate to human interaction. 
+These biases, usually the result of impressionable programming, data acquisition, and machine learning, are detrimental to workplace accessibility and equality. 
+When [[ac:ai][AI]] makes mistakes, the question of liability and accountability arises. 
+Two options exist for holding accountability: the [[ac:ai][AI]] system, and creator. 
+Due to these ethical issues, guidelines must be created and observed by both users and creators. 
+Organizations have already begun recommending [[ac:ai][AI]] guidelines following humanitarian law for a more ethical use of [[ac:ai][AI]]. 
+Unless these issues are acknowledged, they risk multiplying as [[ac:ai][AI]] manages more responsibility and riskier tasks in the future. 
+#+end_abstract
+
+* Introduction
+The notion of artificial intelligence has long been associated with progress and prosperity. 
+Yet its recent emergence in modern life may not prove as much. 
+The influx of artificial intelligence uses in the North-American workplace has introduced various ethical dilemmas. 
+Specifically, it has reshaped communication to necessitate less and less human interaction by augmenting human-computer interaction. 
+Despite the various advantages to automation, the ethical concerns it raises call into question its appropriate extent in the workplace, and beyond. 
+Based on information collected from reputable sources made available through [[ac:ubc][UBC]]’s library databases, the main ethical concerns have been identified. 
+The transparency, bias, accountability,and regulation of [[ac:ai][AI]] are being examined. 
+
+* Allocation of Accountability
+** Assessing Responsibility
+With the noticeable increase of [[ac:ai][AI]] use in the workplace and potential institutional dependency on it, several concerns arise. 
+While [[ac:ai][AI]] functions by analyzing its surroundings, generating alternatives and finding the best outcome it deems possible, [[ac:ai][AI]] ethical decision making remains questionable by humans. 
+As such, it is crucial to address the question: who is held accountable for risks arising from [[ac:ai][AI]] decision making? 
+
+[[ac:ai][AI]] accountability can be assessed through two approaches. 
+The first approach, the classic approach, views machines as slaves or mechanical instruments controlled and owned by humans, thus bearing no responsibility. 
+The second approach, the pragmatic approach, on the other hand, holds [[ac:ai][AI]] accountable for their actions and decisions under the coat of `artificial morality' citep:alaieri2016.
+This, however, is dependent on how the [[ac:ai][AI]] was programmed initially. 
+If the [[ac:ai][AI]] was programmed using the the `top-down' method, where ethical codes are embedded by the programmer, then the coder is fully responsible for the actions for his or her [[ac:ai][AI]]. 
+There may be inherent problems with this approach, Liu notes ``guiding ethical frameworks overlook compound or aggregated effects which may arise, and which can lead to subtle forms of structural discrimination[[citep:liu2017][p.1]].
+But if the [[ac:ai][AI]] was coded using the `bottom up' method, where [[ac:ai][AI]] is able to learn for its surrounding and learn from experience, then the [[ac:ai][AI]] is fully responsible of its actions. 
+The [[ac:ai][AI]], its manufacturers as well as its users can all be held accountable for any negative outcomes resulting from the [[ac:ai][AI]]. 
+
+There are many use cases for [[ac:ai][AI]], particularly in the case of user error or unscrupulous behaviour by users, [[ac:ai][AI]] outcomes can be undesirable. 
+In such cases, of course, the user would be responsible for any outcomes. 
+For example, the Microsoft's Twitter chatbot was noticed to be tweeting sexist and racist responses. 
+This is due to the fact that the intelligence improved through experiential learning, Twitter users having learnt this, intentionally made sexist and racist comments in an effort to impact its decisions citep:alaieri2016.
+
+** Applications and Practice
+[[ac:ai][AI]] is arguably better at `rational' decision making than humans but the lack of human trust in [[ac:ai][AI]] decision making sustains a fear of negative outcomes.
+[[ac:ai][AI]] will give the output without any further explanation, even if the decision making process is opaque. 
+This means that in some cases [[ac:ai][AI]] makes the `rational' response but human perception may not reach the same conclusion and hence think the decision made by the [[ac:ai][AI]] was unethical citep:alaieri2016.
+
+Thus for a more practical way of allocating accountability, it is suggested that a certifying agency be created under the purview of the [[Ac:aida][AIDA]] that evaluates the safety of [[ac:ai][AI]]. 
+If manufacturers pass the certificate, then they would hold limited liability of whatever the outcomes of their [[ac:ai][AI]] produces, however, if an [[ac:ai][AI]] product isn't `certified' then the producer/programmer is to be hold responsible for the negative or unethical decisions made by their [[ac:ai][AI]] citep:scherer2016.
+The accountability of [[ac:ai][AI]] thus, depends on multiple factors and differs when looked at from multiple perspectives. 
+This indicates that more work should be put onto the regulations of the use of [[ac:ai][AI]] to resolve the ethical concerns of its decision making in the workplace. 
+
+* Unintentional Bias of [[acrshort:ai][AI]] 
+The notion that [[ac:ai][AI]] can be objective is an attractive prospect. 
+Using [[ac:ai][AI]] in lieu of a human could serve in eliminating any preconceptions or judgements that are unrelated to the task at hand. 
+This symbolizes an advantageous elimination of unethical treatment in the workplace, and beyond. 
+However, much like the people that make them, [[ac:ai][AI]] can equally be riddled with biases. 
+The plausibility of a truly bias free [[ac:ai][AI]] is under question. 
+
+#+BEGIN_SRC dot :file constituents.png
+
+        digraph G {
+
+        rankdir=LR;
+        node [shape=record fontsize=10 fontname="Verdana"];
+        edge [arrowsize=.5];
+        
+        af [label="Active filtering"];
+        ci [label="Creator impact"];
+        lb [label="Language barriers"];
+        pitl [label="Prejudices inherent to language"];
+
+        biai [label="Bias in artificial intelligence"];
+
+        pd [label="Perpetuates discrimination"];
+        mc [label="Manipulated content"];
+        la [label="Limits accessibility"];
+
+        af -> biai;
+        ci -> biai;
+        lb -> biai;
+        pitl -> biai;
+
+        biai -> pd;
+        biai -> mc;
+        biai -> la;
+        }
+
+#+END_SRC
+
+#+CAPTION[Constituents and Effects of [[ac:ai][AI]] Biases]: The Constituents and Potential Effects of [[ac:ai][AI]] Biases. label:fig-constituents
+#+RESULTS:
+[[file:constituents.png]]
+
+** Prejudice and Accessibility
+With the ever-increasing presence of [[ac:ai][AI]] in the workplace, interactions with this technology become more significant.
+It is a powerful tool, but it can equally be detrimental.
+[[ac:ai][AI]] parameters may decrease accessibility and perpetuate stereotypes by the means illustrated in Figure ref:fig-constituents.
+
+A popular use of [[ac:ai][AI]] consists of virtual personal assistants, such as Apple's Siri or Microsoft's Cortana. 
+Yet their use is not available to all. 
+Voice automated technologies often fall short when it comes to recognizing various dialects or non-standardized speech citep:hirayama2015. 
+This bars people with such manners of speech from using a helpful technology that facilitates work. 
+
+Human interaction with [[ac:ai][AI]] involves a heavy amount of filtering. 
+It is often used to better suit a user's needs. 
+Yet it can also serve as a method of advertisement and withhold useful information. 
+The bias in the filtering process is a product of personalized algorithms, the influence of the creator, and intentional content selection by the technology's owner citep:bozdag2013. 
+This can limit [[ac:ai][AI]]'s flexibility and range in informational output, providing the user partial results.
+
+The characterization of biases within [[ac:ai][AI]] is inexact and the bestowment of the title is often contested. 
+Nonetheless, there exists biases in [[ac:ai][AI]] that are undeniable biases. Sexism, racism, and the likes are ethical dilemmas to which [[ac:ai][AI]] are susceptible. 
+The documented instances of racial prejudice in [[ac:ai][AI]] citep:danks2017 risk perpetuating harmful stereotypes and racism. 
+
+#+attr_latex: :align c|c
+#+CAPTION[Word Vector Associations with "She" and "He"]: The Strongest Word Vector Associations with "She" and "He" found in Word2Vec \footnotemark. Created with data from cite:bolukbasi2016 label:tbl-wordvec
+| She          | He          |
+|--------------+-------------|
+| Homemaker    | Maestro     |
+| Nurse        | Protégé     |
+| Receptionist | Philosopher |
+| Librarian    | Captain     |
+| Socialite    | Architect   |
+| Hairdresser  | Financer    |
+| Nanny        | Warrior     |
+
+$\footnotetext{Word2Vec is a complex embedding created on a corpus of Google News with 3 million words \citep{bolukbasi2016}.}$
+
+Methods of machine learning, such as semantics achieved through word embedding[fn:word-embedding] , are liable to precisely reflect the biases seen in humans citep:caliskan2017. 
+This compromises any hope of objectivity and holds ethical ramifications. 
+
+[fn:word-embedding] Word-embedding is the mathematical representation of conceptual associations within language
+
+
+For example, Bryson, Caliskan, and Narayanan noted how the word "she" was associated with words pertaining to domestic roles, examples of these associations are available in Table ref:tbl-wordvec. 
+This is counteractive to the sociopolitical progress made by women. 
+It compromises women’s and minorities’ importance and personal development within the workplace. 
+
+** The Search for Objectivity
+Some argue that unbiased [[ac:ai][AI]] is likely unachievable citep:bozdag2013. 
+Any product of humans is prone to echo their same partiality. 
+Nevertheless, the mitigation of some detrimental biases is possible. 
+Speech recognition in [[ac:ai][AI]] has been improved upon to respond to a wider array of dialects citep:hirayama2015, increasing accessibility. Biases are arguably an inherent part of the algorithms on which [[ac:ai][AI]] is based citep:danks2017. 
+The solution may lie in bias mitigation at the source: humans.
+
+* Transparency in [[acrshort:ai][AI]] Decision Making
+Being still an emerging technology, truly autonomous [[ac:ai][AI]] is still far from being a reality.
+There are still many problems that must be solved before [[ac:ai][AI]] can be used safely and ethically.
+
+** Overview of Neural Network Based Systems
+A [[Ac:nn][NN]] can simply be thought of as a function that takes inputs and produces some output. 
+For example, a [[ac:nn][NN]] that classifies numbers might take pictures of handwritten digits as inputs. 
+
+#+LATEX_HEADER: \usepackage{subcaption}
+
+#+CAPTION[Handwritten Digit Samples]: Images of handwritten digits and their labels from the MNIST database citep:mnistdb label:fig-mnist_digits
+#+begin_figure
+#+BEGIN_CENTER
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:0.jpg]]
+\caption*{label=5}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:1.jpg]]
+\caption*{label=0}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:2.jpg]]
+\caption*{label=4}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:3.jpg]]
+\caption*{label=1}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:4.jpg]]
+\caption*{label=9}
+#+END_subfigure
+#+END_CENTER
+#+end_figure
+
+
+The input layer would have one neuron per pixel in the image, with the activation being the pixel's brightness.
+The output layer would one neuron for each digit.
+In between these layers are what are called ``hidden layers''.
+Each neuron in a layer are connected to every neuron from the previous layer.
+Each of these connections will have some unique weight that represents how strongly correlated they are.
+
+
+#+BEGIN_SRC dot :file nn.png
+
+        digraph G {
+
+        graph [dpi=300 fontname="Verdana" pencolor=transparent];
+        edge [arrowsize=.5];
+
+        rankdir=LR;
+        node[label="" shape=circle];
+        splines=false;
+
+        subgraph cluster_input {
+        label="Input";
+        i0;
+        i1;
+        i2;
+        }
+
+        subgraph cluster_hidden {
+        label="Hidden";
+        h0;
+        h1;
+        h2;
+        h3;
+        }
+
+        subgraph cluster_output {
+        label="Output";
+        o0;
+        o1;
+        }
+
+        i0 -> h0;
+        i0 -> h1;
+        i0 -> h2;
+        i0 -> h3;
+
+        i1 -> h0;
+        i1 -> h1;
+        i1 -> h2;
+        i1 -> h3;
+
+        i2 -> h0;
+        i2 -> h1;
+        i2 -> h2;
+        i2 -> h3;
+
+        h0 -> o0;
+        h0 -> o1;
+
+        h1 -> o0;
+        h1 -> o1;
+
+        h2 -> o0;
+        h2 -> o1;
+
+        h3 -> o0;
+        h3 -> o1;
+        }
+
+        
+
+#+END_SRC
+
+#+CAPTION[Visual Representation of a Neural Network]: A visual representation of a small neural network with 3 inputs, 2 outputs, and one hidden layer. label:fig-nn
+#+RESULTS:
+[[file:nn.png]]
+
+
+The activation of a given neuron is then calculated as follows:
+\begin{equation}\label{eqn:activation}
+	a_{(i,j)} = \sigma \left( \left( \sum\limits_{n=1}^N = a_{(n,j-1)}w_{(n,j-1)|(i,j)} \right) + b_{(i,j)} \right)
+\end{equation}
+$\blfootnote{Equation (\ref{eqn:activation}) describes the summing of the activation of all of the previous neurons plus some bias, and then normalizing it using the sigmoid function.}$
+
+The weights are calculated for every neuron until they reach the output layer, where they hopefully give meaningful output.
+Here, a good output would be the neuron representing the correct digit having high activation, while the other neurons have low activation.
+
+** Using Training Data in the Real World
+When a [[ac:nn][NN]] is created, the weights are unset and the network produces random noise for any given input.
+To make the network produce meaningful data it must be trained.
+Training is done by providing input, comparing its output to the expected output, and adjusting the weights accordingly[fn:backpropagation].
+
+[fn:backpropagation] This is done with back-propagation, which essentially means adjusting the weights between the final layers, then adjusting the ones before that, until all the layers have been adjusted.
+
+
+
+One of the problems that arises from this is that the [[ac:nn][NN]] becomes optimized for the training data.
+Because of this, it is not guaranteed to perform well on a different set of data citep:amodei2016. 
+While this problem is not specific to [[ac:ai][AI]] [fn:efficacy], [[acp:nn][NN]] are unable to recognize that they are untrained.
+This could create ethical issues when creating [[ac:ai][AI]] that must communicate to a user.
+By being trained on data from one cultural region, the [[ac:ai][AI]] may lack cultural awareness of others.
+
+[fn:efficacy] i.e. an untrained human will also be poor at the same task
+
+
+
+** Current and Future Ethical Implications of Using [[acrshort:ai][AI]] in the Workplace
+One of the applications of [[ac:ai][AI]] is [[Ac:sa][SA]].
+[[ac:sa][SA]] is used to identify someone's attitude towards some topic.
+Predictably, this technology has become highly sought after by businesses citep:alexandra2014.
+[[Ac:sa][SA]] can be used to read the publics' reaction to something, or provide information for optimizing marketing campaigns.
+However, it can also be used to monitor an employee's communications.
+This could have serious ethical implications since it would be impossible for an employee to know what messages may get flagged.
+An employee could be fired without ever saying something against company policy.
+
+As [[ac:ai][AI]] systems become more general, they will replace humans in more and more areas.
+It is imperative that these [[ac:ai][AI]] systems act in an ethical manner.
+One of the most important things to consider is how to define an [[ac:ai][AI]]'s goals.
+For example, a general [[ac:ai][AI]] may be self-protective so that it may continue to achieve its goal citep:omohundro2014, leading to unwanted behavior.
+Because of the opaque nature of [[ac:ai][AI]], it will be hard to verify that a given system completely follows its intended purpose.
+
+* Guidelines for [[acrshort:ai][AI]] Usage
+To address the issues with [[ac:ai][AI]], guidelines must be created and observed by producers and users.
+Creating guidelines for [[ac:ai][AI]] is difficult, but crucial to address the downfalls of [[ac:ai][AI]].
+
+** Creating Guidelines for the Future
+Many organizations have already begun looking at the effects of [[ac:ai][AI]] on the future society.
+The One-Hundred-Year Study On [[ac:ai][AI]] from Stanford University outlines some aspects required to create effective guidelines: 
+Place experts who understand [[ac:ai][AI]] interaction in government in order to property evaluate [[ac:ai][AI]] impact and recommend a path of action; 
+Fund interdisciplinary studies to look at the social impact of [[ac:ai][AI]]; 
+and, remove impediments to allow research on fairness and security of [[ac:ai][AI]] which is critical for examining accountability for [[ac:ai][AI]] systems citep:stone2016.
+Creating guidelines will take time and a lot work is still needed, yet the first steps were already taken by the white house last year as two reports outlining a strategy for [[ac:ai][AI]] [[Ac:rd][R&D]] were published.
+The [[Ac:nstc][NSTC]] [[Ac:mlai][MLAI]] community outlined over twenty recommendations, some major ones are presented in Table ref:tbl-ntscrec below \citep{nstc2016}.
+
+#+attr_latex: :align l|L{5in}
+#+CAPTION: Key [[ac:nstc][NSTC]] Recommendations label:tbl-ntscrec
+| [[ac:nstc][NSTC]] Number | Recommendation                                                                                                                                 |
+|-------------+------------------------------------------------------------------------------------------------------------------------------------------------|
+|           1 | Institutions should examine whether and how they can responsibly use [[ac:mlai][MLAI]]                                                                      |
+|           2 | Federal agencies should prioritize open data training and open data standards in [[ac:ai][AI]]                                                            |
+|           4 | The [[ac:nstc][NSTC]] [[ac:mlai][MLAI]] subcomittee should develop a group for [[ac:ai][AI]] practitioners across government                                                        |
+|          11 | The government should monitor the milestones of [[ac:ai][AI]] development in other countries                                                              |
+|          13 | The federal government should prioritize short and long-term [[ac:ai][AI]] [[ac:rd][R&D]]                                                                            |
+|          18 | Schools should include ethics, and discussions about security, privacy, and safety, as part of a curricula on [[ac:ai][AI]], and machine learning         |
+|          20 | The government should develop a strategy on international engagement, and a list of [[ac:ai][AI]] areas that need international engagement and monitoring |
+|          23 | The government should finish developing of a single policy, consistent with humanitarian law, on autonomous and semi-autonomous weapons        |
+
+
+As a budding topic, [[ac:ai][AI]] is becoming more prominent and concerns are being raised on how it will change the society.
+A concern for many people is losing their jobs to automation. 
+Moreover, the development of [[ac:ai][AI]] will cause inequality and greater bias in the labour market as low-skilled jobs disappear creating way for more high-skilled jobs citep:leenes2017.
+Therefore, this issue, like many other, must be addressed in the future guidelines, but including all ethical issues is difficult.
+
+** The Challenge of Creating Guidelines
+The major challenge of creating regulation for [[ac:ai][AI]] is keeping up with the technological advances. 
+Since [[ac:ai][AI]] technology is new and evolving, there will be gaps in existing regulation and new laws to be made to adapt to the technology. 
+However, since the technology is advancing rapidly more conflicts will arise with existing regulations. 
+This dilemma for controlling evolving technology is called technology-neutrality versus legal certainty. 
+One method is controlling the effects of [[ac:ai][AI]] using abstract regulations that can apply to many cases, yet this may not provide enough legal constraints and certainty. 
+On the other hand, having strong legal certainty and premature laws may obstruct the scientific advancement and stop innovation. 
+Legal regulations can’t be adapted to include new advancing technology or use reclassification to include evolving technology in an existing distinction, new neutral and legal constrained need to be created \citep{leenes2017}. 
+
+Regulating [[ac:ai][AI]] comes with the challenge of following ethical standards, and a strong value system of overarching principles. 
+The issue of accountability must be addressed in the legal regulations, transparent research must be conducted to allow clear future guidelines for [[ac:ai][AI]] use, and biases must be considered in order to decide whether [[ac:ai][AI]] would strengthen existing bias or create new biases. 
+The ethical principles should be key part in the creation of new guidelines but also impose the big challenge on the creation of proper guidelines. 
+
+* Conclusion
+It is undeniable that [[ac:ai][AI]] has potential. 
+However, it has yet to be decided whether it has potential for good, or for harm. 
+
+It is in these formative stages, when the technology is quickly emerging, that the ethics of [[ac:ai][AI]] must be analyzed, discussed, and addressed. 
+This can be done by looking closely at its enigmatic conception, its predispositions, its accountability, and the regulations that aim to govern them. 
+
+[[ac:ai][AI]] is often described as a ``black box''. 
+Its operation is based on inputs and outputs, and the link between the two remains cryptic to most. 
+The formation of these [[acp:nn][NN]] rely on inputting a set of data, analyzing the result and reconfiguring accordingly. 
+This can lead to a network constrained to specific data or one that blunders unknowingly. 
+The use of these networks in [[ac:sa][SA]] and marketing threatens privacy and freedom of speech. 
+We even risk being outsmarted and outmaneuvered by our own technology.  
+
+Void of human sentiment and susceptibility to corruption, [[ac:ai][AI]] has the potential for objectivity. 
+Yet the current biases in [[ac:ai][AI]] challenge the realism of this prospect. 
+Biases in [[ac:ai][AI]] architectures may propagate social division through selective voice automated technology, partial filtering, and human based machine learning. 
+In turn, this perpetuates racial prejudice, sexism and other harmful stereotypes. 
+These effectively counteract social progress and cause imbalance in the workplace. 
+However, improvement is possible by working case by case.
+
+When complications in [[ac:ai][AI]] arise, the bestowal of blame can be complicated. 
+[[ac:ai][AI]] accountability  depends on its production and use. 
+A programmer may be held responsible if an  ethical framework is said to have been established. 
+Yet if [[ac:ai][AI]] learns from experience, unethical consequences could be attributed to the [[ac:ai][AI]], the entire body of individuals governing its behaviour, or the users themselves. 
+To resolve this, a certifying agency ought to ascertain the safety of [[ac:ai][AI]]. 
+Manufacturers would be cleared of liability if the [[ac:ai][AI]] is passable, otherwise the producer is liable.
+
+Enlisting the help of experts, running studies, and establishing guidelines may mitigate the  unfavorable ethical impacts of [[ac:ai][AI]]. 
+Published reports recommend targeting government involvement, informing people about [[ac:ai][AI]], and monitoring the international effect of [[ac:ai][AI]]. 
+However, Establishing adequate regulation has proved difficult. Keeping pace with advancements without constraining growth is a fine balance. 
+Moving forward, society should continue to innovate but must remain vigilant and recognize the ethical risks of [[ac:ai][AI]]. 
+
+
+
+bibliographystyle:apalike
+
+bibliography:bibliography.bib

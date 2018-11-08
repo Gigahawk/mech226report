@@ -1,0 +1,99 @@
+\DeclareRobustCommand{\retrieved}[1]{Retrieved from \url{#1}}
+\begin{thebibliography}{}
+
+\bibitem[Alaieri and Vellino, 2016]{alaieri2016}
+Alaieri, F. and Vellino, A. (2016).
+\newblock Ethical decision making in robots: Autonomy, trust and
+  responsibility.
+\newblock In {\em International Conference on Social Robotics}, pages 159--168.
+  Springer.
+
+\bibitem[Amodei et~al., 2016]{amodei2016}
+Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., and
+  Man{\'e}, D. (2016).
+\newblock {Concrete Problems in AI Safety}.
+\newblock {\em arXiv preprint arXiv:1606.06565}.
+
+\bibitem[Balahur et~al., 2014]{alexandra2014}
+Balahur, A., Mihalcea, R., and Montoyo, A. (2014).
+\newblock Computational approaches to subjectivity and sentiment analysis:
+  Present and envisaged methods and applications.
+\newblock {\em Computer Speech \& Language}, 28(1):1--6.
+
+\bibitem[Bolukbasi et~al., 2016]{bolukbasi2016}
+Bolukbasi, T., Chang, K.-W., Zou, J.~Y., Saligrama, V., and Kalai, A.~T.
+  (2016).
+\newblock Man is to computer programmer as woman is to homemaker? debiasing
+  word embeddings.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  4349--4357.
+
+\bibitem[Bozdag, 2013]{bozdag2013}
+Bozdag, E. (2013).
+\newblock Bias in algorithmic filtering and personalization.
+\newblock {\em Ethics and information technology}, 15(3):209--227.
+
+\bibitem[Caliskan et~al., 2017]{caliskan2017}
+Caliskan, A., Bryson, J.~J., and Narayanan, A. (2017).
+\newblock Semantics derived automatically from language corpora contain
+  human-like biases.
+\newblock {\em Science}, 356(6334):183--186.
+
+\bibitem[Danks and London, 2017]{danks2017}
+Danks, D. and London, A. (2017).
+\newblock Algorithmic bias in autonomous systems.
+\newblock {\em Proceedings of the 26th International Joint Conference on
+  Artificial Intelligence (IJCAI 2017)}, pages 4691--4697.
+
+\bibitem[Hirayama et~al., 2015]{hirayama2015}
+Hirayama, N., Yoshino, K., Itoyama, K., Mori, S., and Okuno, H.~G. (2015).
+\newblock Automatic speech recognition for mixed dialect utterances by mixing
+  dialect language models.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech and Language Processing
+  (TASLP)}, 23(2):373--382.
+
+\bibitem[Lecun and Cortes, 1999]{mnistdb}
+Lecun, Y. and Cortes, C. (1999).
+\newblock {The MNIST database of handwritten digits}.
+\newblock \retrieved{http://yann.lecun.com/exdb/mnist/}.
+
+\bibitem[Leenes et~al., 2017]{leenes2017}
+Leenes, R., Palmerini, E., Koops, B.-J., Bertolini, A., Salvini, P., and
+  Lucivero, F. (2017).
+\newblock Regulatory challenges of robotics: some guidelines for addressing
+  legal and ethical issues.
+\newblock {\em Law, Innovation and Technology}, 9(1):1--44.
+
+\bibitem[Liu, 2017]{liu2017}
+Liu, H.-Y. (2017).
+\newblock Irresponsibilities, inequalities and injustice for autonomous
+  vehicles.
+\newblock {\em Ethics and Information Technology}, 19(3):193--207.
+
+\bibitem[{National Science and Technology Council (U.S.) and Office of Science
+  and Technology Policy and United States}, 2016]{nstc2016}
+{National Science and Technology Council (U.S.) and Office of Science and
+  Technology Policy and United States} (2016).
+\newblock Preparing for the future of artificial intelligence.
+\newblock Technical report, Executive Office of the President.
+
+\bibitem[Omohundro, 2014]{omohundro2014}
+Omohundro, S. (2014).
+\newblock Autonomous technology and the greater human good.
+\newblock {\em Journal of Experimental \& Theoretical Artificial Intelligence},
+  26(3):303--315.
+
+\bibitem[Scherer, 2016]{scherer2016}
+Scherer, M.~U. (2016).
+\newblock Regulating artificial intelligence systems: risks, challenges,
+  competencies, and strategies.
+\newblock {\em Harvard Journal of Law \& Technology}, 29(2):353.
+
+\bibitem[Stone et~al., 2016]{stone2016}
+Stone, P., Brooks, R., Brynjolfsson, E., Calo, R., Etzioni, O., Hager, G.,
+  Hirschberg, J., Kalyanakrishnan, S., Kamar, E., Kraus, S., et~al. (2016).
+\newblock Artificial intelligence and life in 2030.
+\newblock {\em One Hundred Year Study on Artificial Intelligence: Report of the
+  2015-2016 Study Panel}.
+
+\end{thebibliography}

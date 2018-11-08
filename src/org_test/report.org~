@@ -1,0 +1,293 @@
+#+TITLE: Ethics of Artificial Intelligence in the North-American Workplace
+#+latex_header: \usepackage[toc,acronyms]{glossaries}
+#+latex_header: \usepackage[round]{natbib}
+#+latex_header: \usepackage{svg}
+#+latex_header: \makeglossaries
+
+
+#+latex_header_extra: \newacronym{ai}{AI}{Artificial Intelligence}
+#+latex_header_extra: \newacronym{aida}{AIDA}{Artificial Intelligence Development Act}
+#+latex_header_extra: \newacronym{ubc}{UBC}{University of British Columbia}
+#+latex_header_extra: \newacronym{nn}{NN}{Neural Network}
+
+\glsaddall \printglossary[type=\acronymtype]
+
+
+#+begin_abstract
+[[Ac:ai][AI]] is becoming increasingly prominent in the workplace, with systems appearing everywhere from smartphones to cars. 
+With this increase of [[ac:ai][AI]] systems, more ethical issues regarding their usage are becoming apparent. 
+[[ac:ai][AI]] systems are are incredibly complicated and often considered “black boxes” due to the lack of understanding and trust society has with regards to their inner workings. 
+The use of neural networks and data testing using known inputs and outputs, pose the challenge of verifying whether [[ac:ai][AI]] is suitable for a task. 
+Using AI in daily life demands significant  human computer interaction, which means that any biases inherent to [[ac:ai][AI]] will propagate to human interaction. 
+These biases, usually the result of impressionable programming, data acquisition, and machine learning, are detrimental to workplace accessibility and equality. 
+When [[ac:ai][AI]] makes mistakes, the question of liability and accountability arises. 
+Two options exist for holding accountability: the [[ac:ai][AI]] system, and creator. 
+Due to these ethical issues, guidelines must be created and observed by both users and creators. 
+Organizations have already begun recommending [[ac:ai][AI]] guidelines following humanitarian law for a more ethical use of [[ac:ai][AI]]. 
+Unless these issues are acknowledged, they risk multiplying as [[ac:ai][AI]] manages more responsibility and riskier tasks in the future. 
+#+end_abstract
+
+* Introduction
+The notion of artificial intelligence has long been associated with progress and prosperity. 
+Yet its recent emergence in modern life may not prove as much. 
+The influx of artificial intelligence uses in the North-American workplace has introduced various ethical dilemmas. 
+Specifically, it has reshaped communication to necessitate less and less human interaction by augmenting human-computer interaction. 
+Despite the various advantages to automation, the ethical concerns it raises call into question its appropriate extent in the workplace, and beyond. 
+Based on information collected from reputable sources made available through [[ac:ubc][UBC]]’s library databases, the main ethical concerns have been identified. 
+The transparency, bias, accountability,and regulation of [[ac:ai][AI]] are being examined. 
+
+* Allocation of Accountability
+** Assessing Responsibility
+With the noticeable increase of [[ac:ai][AI]] use in the workplace and potential institutional dependency on it, several concerns arise. 
+While [[ac:ai][AI]] functions by analyzing its surroundings, generating alternatives and finding the best outcome it deems possible, [[ac:ai][AI]] ethical decision making remains questionable by humans. 
+As such, it is crucial to address the question: who is held accountable for risks arising from [[ac:ai][AI]] decision making? 
+
+[[ac:ai][AI]] accountability can be assessed through two approaches. 
+The first approach, the classic approach, views machines as slaves or mechanical instruments controlled and owned by humans, thus bearing no responsibility. 
+The second approach, the pragmatic approach, on the other hand, holds [[ac:ai][AI]] accountable for their actions and decisions under the coat of `artificial morality' citep:alaieri2016.
+This, however, is dependent on how the [[ac:ai][AI]] was programmed initially. 
+If the [[ac:ai][AI]] was programmed using the the `top-down' method, where ethical codes are embedded by the programmer, then the coder is fully responsible for the actions for his or her [[ac:ai][AI]]. 
+There may be inherent problems with this approach, Liu notes ``guiding ethical frameworks overlook compound or aggregated effects which may arise, and which can lead to subtle forms of structural discrimination[[citep:liu2017][p.1]].
+But if the [[ac:ai][AI]] was coded using the `bottom up' method, where [[ac:ai][AI]] is able to learn for its surrounding and learn from experience, then the [[ac:ai][AI]] is fully responsible of its actions. 
+The [[ac:ai][AI]], its manufacturers as well as its users can all be held accountable for any negative outcomes resulting from the [[ac:ai][AI]]. 
+
+There are many use cases for [[ac:ai][AI]], particularly in the case of user error or unscrupulous behaviour by users, [[ac:ai][AI]] outcomes can be undesirable. 
+In such cases, of course, the user would be responsible for any outcomes. 
+For example, the Microsoft's Twitter chatbot was noticed to be tweeting sexist and racist responses. 
+This is due to the fact that the intelligence improved through experiential learning, Twitter users having learnt this, intentionally made sexist and racist comments in an effort to impact its decisions citep:alaieri2016.
+
+** Applications and Practice
+[[ac:ai][AI]] is arguably better at `rational' decision making than humans but the lack of human trust in [[ac:ai][AI]] decision making sustains a fear of negative outcomes.
+[[ac:ai][AI]] will give the output without any further explanation, even if the decision making process is opaque. 
+This means that in some cases [[ac:ai][AI]] makes the `rational' response but human perception may not reach the same conclusion and hence think the decision made by the [[ac:ai][AI]] was unethical citep:alaieri2016.
+
+Thus for a more practical way of allocating accountability, it is suggested that a certifying agency be created under the purview of the [[Ac:aida][AIDA]] that evaluates the safety of [[ac:ai][AI]]. 
+If manufacturers pass the certificate, then they would hold limited liability of whatever the outcomes of their [[ac:ai][AI]] produces, however, if an [[ac:ai][AI]] product isn't `certified' then the producer/programmer is to be hold responsible for the negative or unethical decisions made by their [[ac:ai][AI]] citep:scherer2016.
+The accountability of [[ac:ai][AI]] thus, depends on multiple factors and differs when looked at from multiple perspectives. 
+This indicates that more work should be put onto the regulations of the use of [[ac:ai][AI]] to resolve the ethical concerns of its decision making in the workplace. 
+
+* Unintentional Bias of [[ac:ai][AI]]
+The notion that [[ac:ai][AI]] can be objective is an attractive prospect. 
+Using [[ac:ai][AI]] in lieu of a human could serve in eliminating any preconceptions or judgements that are unrelated to the task at hand. 
+This symbolizes an advantageous elimination of unethical treatment in the workplace, and beyond. 
+However, much like the people that make them, [[ac:ai][AI]] can equally be riddled with biases. 
+The plausibility of a truly bias free [[ac:ai][AI]] is under question. 
+
+#+BEGIN_SRC dot :file constituents.png
+
+        digraph G {
+
+        rankdir=LR;
+        node [shape=record fontsize=10 fontname="Verdana"];
+        edge [arrowsize=.5];
+        
+        af [label="Active filtering"];
+        ci [label="Creator impact"];
+        lb [label="Language barriers"];
+        pitl [label="Prejudices inherent to language"];
+
+        biai [label="Bias in artificial intelligence"];
+
+        pd [label="Perpetuates discrimination"];
+        mc [label="Manipulated content"];
+        la [label="Limits accessibility"];
+
+        af -> biai;
+        ci -> biai;
+        lb -> biai;
+        pitl -> biai;
+
+        biai -> pd;
+        biai -> mc;
+        biai -> la;
+        }
+
+#+END_SRC
+
+#+CAPTION[Constituents and Effects of [[ac:ai][AI]] Biases]: The Constituents and Potential Effects of [[ac:ai][AI]] Biases. label:fig-constituents
+#+RESULTS:
+[[file:constituents.png]]
+
+** Prejudice and Accessibility
+With the ever-increasing presence of [[ac:ai][AI]] in the workplace, interactions with this technology become more significant.
+It is a powerful tool, but it can equally be detrimental.
+[[ac:ai][AI]] parameters may decrease accessibility and perpetuate stereotypes by the means illustrated in Figure ref:fig-constituents.
+
+A popular use of [[ac:ai][AI]] consists of virtual personal assistants, such as Apple's Siri or Microsoft's Cortana. 
+Yet their use is not available to all. 
+Voice automated technologies often fall short when it comes to recognizing various dialects or non-standardized speech citep:hirayama2015. 
+This bars people with such manners of speech from using a helpful technology that facilitates work. 
+
+Human interaction with [[ac:ai][AI]] involves a heavy amount of filtering. 
+It is often used to better suit a user's needs. 
+Yet it can also serve as a method of advertisement and withhold useful information. 
+The bias in the filtering process is a product of personalized algorithms, the influence of the creator, and intentional content selection by the technology's owner citep:bozdag2013. 
+This can limit [[ac:ai][AI]]'s flexibility and range in informational output, providing the user partial results.
+
+The characterization of biases within [[ac:ai][AI]] is inexact and the bestowment of the title is often contested. 
+Nonetheless, there exists biases in [[ac:ai][AI]] that are undeniable biases. Sexism, racism, and the likes are ethical dilemmas to which [[ac:ai][AI]] are susceptible. 
+The documented instances of racial prejudice in [[ac:ai][AI]] citep:danks2017 risk perpetuating harmful stereotypes and racism. 
+
+#+attr_latex: :align c|c
+#+CAPTION[Word Vector Associations with "She" and "He"]: The Strongest Word Vector Associations with "She" and "He" found in Word2Vec \footnotemark. Created with data from cite:bolukbasi2016 label:tbl-wordvec
+| She          | He          |
+|--------------+-------------|
+| Homemaker    | Maestro     |
+| Nurse        | Protégé     |
+| Receptionist | Philosopher |
+| Librarian    | Captain     |
+| Socialite    | Architect   |
+| Hairdresser  | Financer    |
+| Nanny        | Warrior     |
+
+$\footnotetext{Word2Vec is a complex embedding created on a corpus of Google News with 3 million words \citep{bolukbasi2016}.}$
+
+Methods of machine learning, such as semantics achieved through word embedding[fn:word-embedding] , are liable to precisely reflect the biases seen in humans citep:caliskan2017. 
+This compromises any hope of objectivity and holds ethical ramifications. 
+
+[fn:word-embedding] Word-embedding is the mathematical representation of conceptual associations within language
+
+For example, Bryson, Caliskan, and Narayanan noted how the word "she" was associated with words pertaining to domestic roles, examples of these associations are available in Table ref:tbl-wordvec. 
+This is counteractive to the sociopolitical progress made by women. 
+It compromises women’s and minorities’ importance and personal development within the workplace. 
+
+** The Search for Objectivity
+Some argue that unbiased [[ac:ai][AI]] is likely unachievable citep:bozdag2013. 
+Any product of humans is prone to echo their same partiality. 
+Nevertheless, the mitigation of some detrimental biases is possible. 
+Speech recognition in [[ac:ai][AI]] has been improved upon to respond to a wider array of dialects citep:hirayama2015, increasing accessibility. Biases are arguably an inherent part of the algorithms on which [[ac:ai][AI]] is based citep:danks2017. 
+The solution may lie in bias mitigation at the source: humans.
+
+* Transparency in [[ac:ai][AI]] Decision Making
+Being still an emerging technology, truly autonomous [[ac:ai][AI]] is still far from being a reality.
+There are still many problems that must be solved before [[ac:ai][AI]] can be used safely and ethically.
+
+** Overview of Neural Network Based Systems
+A [[Ac:nn][NN]] can simply be thought of as a function that takes inputs and produces some output. 
+For example, a [[ac:nn][NN]] that classifies numbers might take pictures of handwritten digits as inputs. 
+
+#+LATEX_HEADER: \usepackage{subcaption}
+
+#+CAPTION[Handwritten Digit Samples]: Images of handwritten digits and their labels from the MNIST database citep:mnistdb label:fig-mnist_digits
+#+begin_figure
+#+BEGIN_CENTER
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:0.jpg]]
+\caption*{label=5}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:1.jpg]]
+\caption*{label=0}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:2.jpg]]
+\caption*{label=4}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:3.jpg]]
+\caption*{label=1}
+#+END_subfigure
+#+ATTR_LATEX: :options [t]{.15\textwidth}
+#+BEGIN_subfigure
+#+ATTR_LATEX: :width 1.5cm
+[[file:4.jpg]]
+\caption*{label=9}
+#+END_subfigure
+#+END_CENTER
+#+end_figure
+
+
+The input layer would have one neuron per pixel in the image, with the activation being the pixel's brightness.
+The output layer would one neuron for each digit.
+In between these layers are what are called ``hidden layers''.
+Each neuron in a layer are connected to every neuron from the previous layer.
+Each of these connections will have some unique weight that represents how strongly correlated they are.
+
+
+#+BEGIN_SRC dot :file nn.png
+
+        digraph G {
+
+        graph [dpi=300 fontname="Verdana" pencolor=transparent];
+        edge [arrowsize=.5];
+
+        rankdir=LR;
+        node[label="" shape=circle];
+        splines=false;
+
+        subgraph cluster_input {
+        label="Input";
+        i0;
+        i1;
+        i2;
+        }
+
+        subgraph cluster_hidden {
+        label="Hidden";
+        h0;
+        h1;
+        h2;
+        h3;
+        }
+
+        subgraph cluster_output {
+        label="Output";
+        o0;
+        o1;
+        }
+
+        i0 -> h0;
+        i0 -> h1;
+        i0 -> h2;
+        i0 -> h3;
+
+        i1 -> h0;
+        i1 -> h1;
+        i1 -> h2;
+        i1 -> h3;
+
+        i2 -> h0;
+        i2 -> h1;
+        i2 -> h2;
+        i2 -> h3;
+
+        h0 -> o0;
+        h0 -> o1;
+
+        h1 -> o0;
+        h1 -> o1;
+
+        h2 -> o0;
+        h2 -> o1;
+
+        h3 -> o0;
+        h3 -> o1;
+        }
+
+        
+
+#+END_SRC
+
+#+CAPTION[Visual Representation of a Neural Network]: A visual representation of a small neural network with 3 inputs, 2 outputs, and one hidden layer. label:fig-nn
+#+RESULTS:
+[[file:nn.png]]
+
+
+The activation of a given neuron is then calculated as follows:
+\begin{equation}\label{eqn:activation}
+	a_{(i,j)} = \sigma \left( \left( \sum\limits_{n=1}^N = a_{(n,j-1)}w_{(n,j-1)|(i,j)} \right) + b_{(i,j)} \right)
+\end{equation}
+
+if you look at figure ref:fig-nn, youll find some thing
+bibliographystyle:apalike
+
+bibliography:bibliography.bib
+

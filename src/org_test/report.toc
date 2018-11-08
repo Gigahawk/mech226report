@@ -1,0 +1,16 @@
+\contentsline {section}{Acronyms}{2}{section*.4}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Allocation of Accountability}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Assessing Responsibility}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Applications and Practice}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Unintentional Bias of \acrshort {ai}}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Prejudice and Accessibility}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}The Search for Objectivity}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Transparency in \acrshort {ai} Decision Making}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Overview of Neural Network Based Systems}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Using Training Data in the Real World}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Current and Future Ethical Implications of Using \acrshort {ai} in the Workplace}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}Guidelines for \acrshort {ai} Usage}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Creating Guidelines for the Future}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}The Challenge of Creating Guidelines}{10}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}
